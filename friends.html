@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Друзі</title>
+    <style>
+        /* Заголовок по центру, 22px */
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+        /* Назад на головну курсивом */
+        a.back-link {
+            font-style: italic;
+        }
+        h2 {
+            text-align: center;
+        }
+        /* Оформлення таблиці засобами CSS (без атрибутів у тегах) */
+        table {
+            width: 90%;
+            margin: 0 auto;
+            border-collapse: collapse; /* Границі таблиці */
+        }
+        th, td {
+            border: 1px solid #333; /* Границі клітинок */
+            padding: 10px; /* Відступи тексту від границь */
+        }
+        /* Рядок заголовків стовпців */
+        th {
+            text-align: center; /* Вирівнювання по центру */
+            background-color: green; /* Колір фону - зелений */
+            color: white; /* Контрастний колір тексту */
+            font-weight: bold; /* Напівжирний шрифт */
+        }
+        /* Фон незаголовкових рядків: аналогічно ненумерованому списку */
+        /* tr:nth-child(even) застосується до 2-го (парного) рядка таблиці, тобто 1-го рядка з даними */
+        tr:nth-child(even) td {
+            background-color: gray;
+            color: white;
+        }
+        tr:nth-child(odd) td {
+            background-color: white;
+            color: black;
+        }
+        /* Елементи останнього стовпця таблиці вирівняти по правому краю */
+        td:last-child, th:last-child {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Друзі Клим`юк Роксолани</h1>
+    <a href="index.html" class="back-link">Назад на головну</a>
+
+    <h2>Мої друзі</h2>
+    <!-- Зверніть увагу: атрибути border, cellpadding та cellspacing видалено, усе робить CSS -->
+    <table>
+        <caption>Інформація про друзів</caption>
+        <tr>
+            <th>Прізвище</th>
+            <th>Ім'я</th>
+            <th>Дата народження</th>
+            <th>Адреса проживання</th>
+            <th>Контактний телефон</th>
+        </tr>
+        <tr>
+            <td>Шевченко</td>
+            <td>Анна</td>
+            <td>15.04.2007</td>
+            <td>м. Івано-Франківськ, вул. Чорновола, 12</td>
+            <td>+380991234567</td>
+        </tr>
+        <tr>
+            <td>Коваленко</td>
+            <td>Олександра</td>
+            <td>22.08.2006</td>
+            <td>м. Івано-Франківськ, вул. Франка, 45</td>
+            <td>+380671234567</td>
+        </tr>
+        <tr>
+            <td>Бойко</td>
+            <td>Марія</td>
+            <td>10.11.2007</td>
+            <td>м. Івано-Франківськ, вул. Миру, 8</td>
+            <td>+380501234567</td>
+        </tr>
+        <tr>
+            <td>Мельник</td>
+            <td>Софія</td>
+            <td>05.02.2007</td>
+            <td>м. Івано-Франківськ, вул. Бандери, 1</td>
+            <td>+380631234567</td>
+        </tr>
+    </table>
+</body>
+</html>
