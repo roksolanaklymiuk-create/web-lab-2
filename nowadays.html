@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Сьогодення</title>
+    <style>
+        /* Заголовок по центру, 22px */
+        h1 {
+            text-align: center;
+            font-size: 22px;
+        }
+        /* Назад на головну курсивом */
+        a.back-link {
+            font-style: italic;
+        }
+        /* Заголовки по центру */
+        h2 {
+            text-align: center;
+        }
+        /* Ненумерований список: непарні - сірий фон, парні - білий */
+        ul.shopping-list > li:nth-child(odd) {
+            background-color: gray;
+            color: white;
+        }
+        ul.shopping-list > li:nth-child(even) {
+            background-color: white;
+            color: black;
+        }
+        /* Нумерований список: при наведенні на 3 і 5 елементи курсор як посилання */
+        ol.recipe-list > li:nth-child(3):hover, 
+        ol.recipe-list > li:nth-child(5):hover {
+            cursor: pointer;
+        }
+        /* 4-й елемент нумерованого списку - довільний колір */
+        ol.recipe-list > li:nth-child(4) {
+            background-color: #ffd700; /* Золотистий */
+        }
+    </style>
+</head>
+<body>
+    <h1>Сьогодення Клим`юк Роксолани</h1>
+    <a href="index.html" class="back-link">Назад на головну</a>
+
+    <h2>Мій типовий список покупок</h2>
+    <ul class="shopping-list">
+        <li>Овочі та фрукти (непарний 1)
+            <ul>
+                <li>Помідори</li>
+                <li>Огірки</li>
+                <li>Банани</li>
+                <li>Яблука</li>
+            </ul>
+        </li>
+        <li>Молочні продукти (парний 2)
+            <ul>
+                <li>Молоко</li>
+                <li>Сир твердий</li>
+                <li>Йогурт</li>
+            </ul>
+        </li>
+        <li>Бакалія (непарний 3)
+            <ul>
+                <li>Вівсянка</li>
+                <li>Макарони</li>
+                <li>Рис</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>Мій улюблений десерт (Шарлотка)</h2>
+    <ol class="recipe-list">
+        <li>Підготовка інгредієнтів</li>
+        <li>Приготування тіста</li>
+        <li>Запікання (наведіть курсор - елемент 3)</li>
+        <li>Охолодження десерту (елемент 4 - змінено фон)</li>
+        <li>Подача до столу (наведіть курсор - елемент 5)</li>
+    </ol>
+</body>
+</html>
